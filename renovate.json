@@ -1,0 +1,5 @@
+{
+  "extends": [
+    "github>pagerinc/infra-renovate-config"
+  ]
+}
