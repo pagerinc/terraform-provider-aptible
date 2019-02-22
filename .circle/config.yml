@@ -1,0 +1,13 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: golang:1.11-stretch
+    working_directory: /go/src/github.com/pagerinc/terraform-provider-aptible
+
+    environment:
+      TEST_RESULTS: /tmp/test-results
+
+    steps:
+      - checkout
+      - run: make
