@@ -6,6 +6,8 @@
 *.so
 *.dylib
 
+terraform-provider-aptible
+
 # Test binary, built with `go test -c`
 *.test
 
@@ -16,4 +18,9 @@
 /vendor/
 /Godeps/
 
-terraform-provider-aptible
+### Terraform
+*.tf
+.terraform
+*.tfstate
+*.backup
+tfplan
